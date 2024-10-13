@@ -15,7 +15,11 @@
     "url": "https://github.com/rcptumthta/connect-4-auto-service/issues"
   },
   "devDependencies": {
+    "@types/eslint": "9.6.1",
     "@types/node": "22.7.5",
+    "eslint": "8.57.1",
+    "eslint-plugin-jsonc": "2.16.0",
+    "jsonc-eslint-parser": "2.4.0",
     "typescript": "5.3.3"
   },
   "private": true,
