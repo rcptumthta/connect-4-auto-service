@@ -26,6 +26,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist",
+    "paths": {
+      "@api": ["./src/app/api"],
+      "@common": ["./src/app/common"],
+      "@dto": ["./src/app/dtos"]
+    },
     "removeComments": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
