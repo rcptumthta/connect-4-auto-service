@@ -4,5 +4,8 @@ node_modules/*
 # - Compiled directory
 dist/*
 
+# - Test directory
+coverage/*
+
 # - Json files
 package-lock.json

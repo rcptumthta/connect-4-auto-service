@@ -4,6 +4,9 @@ node_modules/*
 # - Compiled directory
 dist/*
 
+# - Test directory
+coverage/*
+
 # - Editor directories and files
 # -- Visual Studio Code
 .vscode/*
