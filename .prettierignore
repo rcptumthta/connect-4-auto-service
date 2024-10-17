@@ -1,0 +1,8 @@
+# - Dependencies directory
+node_modules/*
+
+# - Compiled directory
+dist/*
+
+# - Test directory
+coverage/*
