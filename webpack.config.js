@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 const path = require("node:path");
@@ -32,6 +33,10 @@ module.exports = function compile(option) {
       ]
     },
     plugins: [
+      new ESLintWebpackPlugin({
+        cache: false,
+        extensions: ["js", "ts"]
+      }),
       new CopyWebpackPlugin({
         patterns: [
           {
@@ -42,4 +47,4 @@ module.exports = function compile(option) {
       })
     ]
   };
-}
+};
