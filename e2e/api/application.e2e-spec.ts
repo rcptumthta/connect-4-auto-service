@@ -28,14 +28,16 @@ describe("Application", (): void => {
   });
 
   it("{/information, GET} ~ OK (200) -> Should return the application information", (): supertest.Test => {
-    return supertest(application.getHttpServer()).get("/information").expect((response: supertest.Response): void => {
-      const expected: ApplicationInformationResponseDTO = new ApplicationInformationResponseDTO({
-        name: "Connect4Auto",
-        description: ""
-      });
+    return supertest(application.getHttpServer())
+      .get("/information")
+      .expect((response: supertest.Response): void => {
+        const expected: ApplicationInformationResponseDTO = new ApplicationInformationResponseDTO({
+          name: "Connect4Auto",
+          description: ""
+        });
 
-      expect(response.status).toBe(200);
-      expect(response.body).toEqual(expected);
-    });
+        expect(response.status).toBe(200);
+        expect(response.body).toEqual(expected);
+      });
   });
 });

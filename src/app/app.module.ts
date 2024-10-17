@@ -6,4 +6,4 @@ import { CommonModule } from "./common";
 @Module({
   imports: [CommonModule, ApiModule]
 })
-export class AppModule { }
+export class AppModule {}

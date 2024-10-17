@@ -14,4 +14,4 @@ import { ApplicationModule } from "./modules";
     ])
   ]
 })
-export class ApiModule { }
+export class ApiModule {}

@@ -9,4 +9,4 @@ import { ApplicationService } from "./application.service";
   controllers: [ApplicationController],
   providers: [InformationQueryHandler, ApplicationService]
 })
-export class ApplicationModule { }
+export class ApplicationModule {}
