@@ -1,0 +1,8 @@
+# - Dependencies directory
+node_modules/*
+
+# - Compiled output directory
+dist/*
+
+# - Json files
+package-lock.json
