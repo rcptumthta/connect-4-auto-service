@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "connect-4-auto-service",
+  "description": "Web Service APIs for Connect4Auto Web Application",
+  "author": {
+    "name": "Ratchapol Thongta",
+    "email": "rcptum.thta@outlook.com",
+    "url": "https://github.com/rcptumthta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcptumthta/connect-4-auto-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rcptumthta/connect-4-auto-service/issues"
+  },
+  "private": true,
+  "engines": {
+    "node": "20.18.0",
+    "npm": "10.8.2"
+  }
+}
