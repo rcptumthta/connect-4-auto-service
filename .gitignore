@@ -1,6 +1,9 @@
 # - Dependencies directory
 node_modules/*
 
+# - Compiled output directory
+dist/*
+
 # - Editor directories and files
 .vscode/*
 !.vscode/extensions.json
