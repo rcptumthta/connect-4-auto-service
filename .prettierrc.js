@@ -1,3 +1,9 @@
+/**
+ * @description Configuration for Prettier
+ *
+ * @returns {import("prettier").Config}
+ *
+ */
 module.exports = {
   arrowParens: "always",
   bracketSpacing: true,

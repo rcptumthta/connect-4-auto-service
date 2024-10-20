@@ -1,3 +1,10 @@
+/**
+ *
+ * @description Configuration for linting JavaScript and TypeScript files
+ *
+ * @type {import('eslint').Linter.Config}
+ *
+ */
 const base = {
   plugins: ["prettier", "promise", "sonarjs", "unicorn", "unused-imports"],
   extends: [
@@ -26,6 +33,13 @@ const base = {
   }
 };
 
+/**
+ *
+ * @description Configuration for linting JavaScript files
+ *
+ * @type {import('eslint').Linter.Config}
+ *
+ */
 const baseJS = {
   plugins: [...base.plugins],
   extends: ["eslint:recommended", ...base.extends],
@@ -35,6 +49,13 @@ const baseJS = {
   }
 };
 
+/**
+ *
+ * @description Configuration for linting TypeScript files
+ *
+ * @type {import('eslint').Linter.Config}
+ *
+ */
 const baseTS = {
   plugins: [...baseJS.plugins, "@typescript-eslint/eslint-plugin"],
   extends: [...baseJS.extends, "plugin:@typescript-eslint/recommended"],
@@ -44,6 +65,13 @@ const baseTS = {
   }
 };
 
+/**
+ *
+ * @description Configuration for ESLint
+ *
+ * @type {import('eslint').Linter.Config}
+ *
+ */
 module.exports = {
   root: true,
   env: {
